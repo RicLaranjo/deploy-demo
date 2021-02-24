@@ -1,0 +1,149 @@
+ /*--------General styles for all the website-----------------*/
+ h1 {
+    font-family: Calibri, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #64b961;
+    
+}
+
+h2 {
+    font-family: Calibri, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7bb4be;
+}
+
+h3 {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #a3aa46;
+}
+
+p {
+    font-family: Calibri, sans-serif;
+    font-size: 16px;  
+}
+
+* {
+background-color: rgb(250, 245, 181);
+}
+
+body {
+    margin: 0%;
+}
+
+.button {
+    color: black;
+    border: 2px solid #a3aa46;
+    border-radius: 12px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Calibri, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .button:hover {
+    background-color: white;
+  }
+
+
+ /*--------Top navigation menu-----------------*/
+ .topnav-contact {
+    overflow: hidden;
+    padding: 10px 10px 10px 10px; /*Etre éloigné du bord de la page*/
+    display: flex;
+    background-color: #ffffff;
+   }
+   .topnav-menu {
+     text-align: center;
+     /*padding: 20px 20px;*/
+     list-style-type: none; /*enlever les bullets points*/
+     background-color: #ffffff;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin: auto;
+   }
+
+   .topnav-link { /* Pour éloigner les mots les uns des autres, ce qui est de la mise en page des mots dans la box*/
+     text-align: center;
+     padding: 30px;
+     text-decoration: none; /*enlever le surlignage*/
+     font-size: 17px;
+     background-color: #ffffff;
+     color: #7bb4be;
+     font-family: Calibri, sans-serif;
+     font-weight: bold;
+   }
+   li a:hover {
+     color: lightslategray;
+   }
+
+   @media screen and (max-width: 400px){ /*not working*/
+    .topnav-menu {
+        text-align: center;
+        /*padding: 20px 20px;*/
+        list-style-type: none; /*enlever les bullets points*/
+        background-color: #681919;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+} 
+    /*--------Big image on homepage-----------------*/
+
+  .background-image {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 750px;
+  }
+  
+  .background-image img {
+    opacity: 0.7;
+    width: 100%;
+    object-fit: cover;
+}
+  .textonimage {
+    position: absolute; /* texte sur l'image */
+    align-items: center;
+
+}
+
+
+  .testimonials   {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0px 25px;
+  }
+
+  h2 {
+    text-align: center;
+}
+
+@media screen and (max-width:850px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  #padding {
+    padding: 40px 0px;
+  }
+  .testimonials p {
+    width: 50%; 
+  }
+  #threeparagraphsparent {
+    flex-wrap: wrap;
+  }
+  .threeparagraphs p {
+    width: 50%; 
+  }
+}
